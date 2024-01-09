@@ -32,6 +32,8 @@
 
 
 .banner_area {
+    position: relative;
+    z-index: 1;
     border-radius: 16px;
     display: flex;
     align-items: center;
@@ -40,6 +42,17 @@
     color: #ffffff;
     font-family: Merriweather;
     background: url("../assets/images/Banner Image.png");
+}
+
+.banner_area:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #11020F 0%, rgba(16, 2, 17, 0.00) 100%);
+    opacity: 100%;
+    z-index: -1;
 }
 
 .blog_title {
@@ -101,10 +114,19 @@
 .vector_area {
     height: 600px;
     background: url("../assets/images/Vectorrr.png");
+    display: flex;
+    justify-content: space-between;
 }
 
 .vector_title {
     width: 55%;
+}
+
+.twenty {
+    margin-top: 68px;
+    margin-bottom: 68px;
+    margin-right: 138px;
+
 }
 
 .vector_area h2 {
@@ -390,4 +412,178 @@ h2 span {
     -ms-transform: scale(1.05);
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
+}
+
+.newsletter_area {
+    border-radius: 16px;
+    background: rgba(255, 0, 0, 0.05);
+}
+
+
+
+.newsletter_area {
+    height: 616px;
+}
+
+.newsletter_area img {
+    width: 150px;
+    height: 150px;
+    margin-top: 80px;
+}
+
+.newsletter_area h2 {
+    color: #070211;
+    text-align: center;
+    font-family: Merriweather;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-top: 42px;
+}
+
+.newsletter_area p {
+    color: rgba(7, 2, 17, 0.60);
+    width: 896px;
+    margin: auto;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    margin-top: 22px;
+}
+
+.subscribe {
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+}
+
+.inputarea {
+    width: 100%;
+    flex-wrap: nowrap;
+}
+
+input.fc {
+    color: rgba(7, 2, 17, 0.30);
+    width: 438px;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 50px 0px 0px 50px;
+    border: none;
+    outline: none;
+    padding: 24px;
+}
+
+button.btton {
+    width: 210px;
+    border-radius: 0px 50px 50px 0px;
+    background: #F00;
+    margin: 0;
+    border: none;
+    padding: 24px;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-left: -4px;
+    cursor: pointer;
+}
+
+footer {
+    height: 609px;
+    background: #070211;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.connect_area {
+    padding-top: 120px;
+}
+
+.connect_area p {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+.connect_area span {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    margin-right: 10px;
+}
+
+.connect_area .contact {
+    padding-right: 135px;
+}
+
+.connect_area .contact img {
+    padding-top: 0px;
+}
+
+hr {
+    background: rgba(255, 255, 255, 0.15);
+    height: 1px;
+    margin: 50px 0;
+    border: none;
+}
+
+.socials {
+    justify-content: center;
+}
+
+.socials li {
+    width: 64px;
+    height: 64px;
+    margin-right: 24px;
+    position: relative;
+}
+
+.socials li a {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.socials li a img {
+    height: 64px;
+    width: 64px;
+}
+
+.socials li:last-child {
+    margin-right: 0px;
+}
+
+.copyright {
+    margin-top: 50px;
+}
+
+.copyright p {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
