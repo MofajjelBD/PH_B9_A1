@@ -53,6 +53,7 @@
     background: linear-gradient(180deg, #11020F 0%, rgba(16, 2, 17, 0.00) 100%);
     opacity: 100%;
     z-index: -1;
+    border-radius: 16px;
 }
 
 .blog_title {
@@ -520,6 +521,8 @@ footer {
     font-style: normal;
     font-weight: 500;
     line-height: 40px;
+    display: flex;
+    align-items: center;
 }
 
 .connect_area span {
@@ -530,6 +533,7 @@ footer {
     font-weight: 500;
     line-height: 40px;
     margin-right: 10px;
+    display: inline-flex;
 }
 
 .connect_area .contact {
